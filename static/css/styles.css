@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav {
+    position: relative;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.hamburger::before {
+    transform: translateY(-8px);
+}
+
+.hamburger::after {
+    transform: translateY(8px);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cover {
+    background: url('taskmaster6.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cover h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.cover p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cover .btn {
+    background: #ff8c00;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature img {
+    width: 200%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+}
+
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 1rem 0;
+    }
+}

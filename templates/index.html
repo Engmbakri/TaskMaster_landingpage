@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Organize Your Way to Success</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">TaskMaster</h1>
+            <nav>
+                <button class="nav-toggle" aria-label="open navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cover">
+        <div class="container">
+            <h1>TaskMaster</h1>
+            <p>Label Your Way to Success</p>
+            <a href="/app" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/feature1.png') }}" alt="Feature 1">
+                    <h3>Create New Task</h3>
+                    <p>The "Create New Task" feature in TaskMaster is designed to streamline the process of task management, making it easy for users to add new tasks quickly and efficiently.</p>
+                </div>
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/feature2.png') }}" alt="Feature 2">
+                    <h3>Edit Task</h3>
+                    <p>The "Edit Task" feature provides users with the flexibility to modify and update their tasks as their plans and priorities change.</p>
+                </div>
+                <div class="feature">
+                    <img src="{{ url_for('static', filename='images/feature3.png') }}" alt="Feature 3">
+                    <h3>Task Details</h3>
+                    <p>The "Task Details" feature provides users with a comprehensive view of each task, ensuring that they have all the necessary information to complete their tasks effectively</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>This project was inspired by a personal need for better task organization and management. TaskMaster helps users to effectively label and prioritize their tasks, making it easier to achieve their goals.</p>
+            <p>Links to team members:</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/mohamed-bakri-b659511aa" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Engmbakri" target="_blank">GitHub</a></li>
+                <li><a href="https://x.com/MohamedBkri1?t=6B4BrtCU3B37lk1uT9BWOA&s=09" target="_blank">Twitter</a></li>
+            </ul>
+            <p><a href="https://github.com/Engmbakri/TaskMaster" target="_blank">GitHub Repository</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TaskMaster. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
